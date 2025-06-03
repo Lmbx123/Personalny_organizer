@@ -1,0 +1,274 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Playwrite HU", cursive;
+    color: black;
+}
+body{
+    background-image: url(./notatka-tlo.jpg);
+    overflow-x: hidden;
+}
+h1{
+    font-size: 50px;
+}
+#ikona{
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.gora{
+    display: flex;
+    height: 100px;
+    background-color: wheat;
+    align-items: center;
+}
+header{
+    background-color: wheat;
+    border-bottom: 5px solid rgb(187, 169, 137);
+}
+#rozwijane a{
+    border-top: 5px solid rgb(221, 200, 162);
+    width: 300px;
+    display: block;
+    height: 80px;
+    text-decoration: none;
+    font-size: 30px;
+}
+#rozwijane a:hover{
+    background-color: rgb(255, 239, 209);
+}
+nav{
+    position: absolute;
+    background-color: wheat;
+    border-left: 5px solid rgb(187, 169, 137);
+    border-bottom: 5px solid rgb(187, 169, 137);
+    right: 0;
+    display: none;
+}
+@keyframes menuanimacja{
+    0%{
+        transform: rotateY(0);
+    }
+    100%{
+        transform: rotateY(180deg);
+    }
+}
+@keyframes menuanimacja2{
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+@keyframes ustawieniaanimacja{
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.animacja{
+    animation: menuanimacja 0.25s forwards;
+}
+.animacja2{
+    animation: menuanimacja 0.25s forwards reverse;
+}
+.animacja3{
+    animation: menuanimacja2 0.25s forwards;
+}
+.animacja4{
+    animation: menuanimacja2 0.25s forwards reverse;
+}
+.animacja5{
+    animation: ustawieniaanimacja 1s forwards;
+}
+p{
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+}
+footer{
+    border-top: 5px solid rgb(187, 169, 137);
+    display: flex;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    background-color: wheat;
+    width: 100%;
+    bottom: 0;
+}
+.glowna,.kontakt{
+    margin-top: 100px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 150px;
+    text-align: center;
+    padding-top: 100px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.8);
+}
+h2{
+    text-align: center;
+    font-size: 30px;
+}
+h3{
+    text-align: center;
+    font-size: 25px;
+}
+button{
+    cursor: pointer;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    font-size: 30px;
+    border: 5px solid wheat;
+    background-color: rgb(255, 246, 235);
+    border-radius: 20px;
+    height: 100px;
+    width: 300px;
+}
+button a{
+    text-decoration: none;
+}
+.dane{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+#ustawienia{
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.dtyg{
+    margin: 15px;
+    width: 200px;
+    height: 300px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.8);
+}
+.dtyg h3{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px
+}
+.organizer{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#typ,#zadanie{
+    font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    height: 100px;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    border-radius: 10px;
+}
+.ustawieniao{
+    border-top: 5px solid rgb(221, 200, 162);
+    display: flex;
+    flex-direction: column;
+}
+#form{
+    width: 20%;
+    margin-left: 40%;
+    margin-right: 40%;
+    height: 100px;
+    text-align: center;
+    background-color: white;
+    border: 1px solid black;
+    margin-bottom: 150px;
+}
+#blad{
+    color: red;
+    margin-bottom: 200px;
+}
+#nazwa{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 25px;
+}
+.zatwierdz{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 50px;
+    text-align: center;
+    background-color: white;
+    border: 1px solid black;
+}
+@media(max-width: 700px) {
+    h1{
+        font-size: 35px;
+    }
+    #ikona,#ustawienia{
+        height: 70px;
+        width: 70px;
+    }
+    .gora{
+        height: 70px;
+    }
+    footer{
+        height: 70px;
+    }
+    h2{
+        font-size: 25px;
+    }
+    .organizer{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .organizer div{
+        width: 40%;
+        margin-left: 30%;
+        margin-right: 30%;
+    }
+    p{
+        font-size: 30px;
+    }
+    h3{
+        font-size: 20px;
+    }
+    #rozwijane a{
+        height: 50px;
+    }
+    #typ,#zadanie{
+        height: 50px;
+    }
+}
+.dzien{
+    overflow:auto;
+}
+.zaddzien{
+    width: 100%;
+    background-color: wheat;
+    border-bottom: 3px solid black;
+}
+label{
+    font-size: 25px;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+textarea{
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 60%;
+    height: 500px;
+    resize: none;
+    font-size: 30px;
+}

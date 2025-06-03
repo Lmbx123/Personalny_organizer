@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+HU:wght@100..400&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalny organizer</title>
+    <link rel="shortcut icon" href="./ikona.png">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <div class="gora">
+            <h1 id="nazwao">Personalny organizer</h1>
+        </div>
+        <nav id="rozwijane">
+            <div class="ustawieniao">
+                <h3>Nazwij swój organizer</h3>
+                <input type="text" placeholder="Wpisz nazwę" id="nazwa">
+                <h3>Wybierz motyw tła</h3>
+                <div><label>Niebieski</label><input type="radio" id="niebieski" name="motyw"></div>
+                <div><label>Standardowy</label><input type="radio" id="standart" name="motyw"></div>
+                <div><label>Zielony</label><input type="radio" id="zielony" name="motyw"></div>
+                <button class="zatwierdz" onclick="Zatwierdz()">Zatwierdź</button>
+            </div>
+        </nav>
+        <img src="./ustawienia.png" alt="menu" id="ustawienia" onclick="settings()">
+    </header>
+    <section class="organizer">
+        <div class="dtyg">
+            <h3 class="zaddzien">Poniedziałek</h3>
+            <div class="dzien">
+                <h3 id="text1"></h3>
+            </div>
+        </div>
+        <div class="dtyg">
+            <h3 class="zaddzien">Wtorek</h3>
+            <div class="dzien">
+                <h3 id="text2"></h3>
+            </div>
+        </div>
+        <div class="dtyg">
+            <h3 class="zaddzien">Środa</h3>
+            <div class="dzien">
+                <h3 id="text3"></h3>
+            </div>
+        </div>
+        <div class="dtyg">
+            <h3 class="zaddzien">Czwartek</h3>
+            <div class="dzien">
+                <h3 id="text4"></h3>
+            </div>
+        </div>
+        <div class="dtyg">
+            <h3 class="zaddzien">Piątek</h3>
+            <div class="dzien">
+                <h3 id="text5"></h3>
+            </div>
+        </div>
+        <div class="dtyg">
+            <h3 class="zaddzien">Sobota</h3>
+            <div class="dzien">
+                <h3 id="text6"></h3>
+            </div>
+        </div>
+        <div class="dtyg">
+            <h3 class="zaddzien">Niedziela</h3>
+            <div class="dzien">
+                <h3 id="text7"></h3>
+            </div>
+        </div>
+    </section>
+    <p>
+        <h3>Wybierz gdzie dodać zadanie</h3>
+        <input list="dni" id="typ" placeholder="Wybierz dzień">
+        <datalist id="dni">
+            <option value="Poniedziałek"></option>
+            <option value="Wtorek"></option>
+            <option value="Środa"></option>
+            <option value="Czwartek"></option>
+            <option value="Piątek"></option>
+            <option value="Sobota"></option>
+            <option value="Niedziela"></option>
+        </datalist>
+        <h3>Wpisz zadanie</h3>
+        <input id="zadanie" type="text" placeholder="Wpisz zadanie">
+        <button id="form" onclick="organizer()">Dodaj</button>
+        <p id="blad"></p>
+    </p>
+    <footer>
+        <h2>Patryk Pudzianowski 2P2</h2>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>
