@@ -210,43 +210,64 @@ button a{
     background-color: white;
     border: 1px solid black;
 }
+textarea{
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 60%;
+    height: 500px;
+    resize: none;
+    font-size: 30px;
+}
 @media(max-width: 700px) {
     h1{
-        font-size: 35px;
+        font-size: 25px;
     }
     #ikona,#ustawienia{
-        height: 70px;
-        width: 70px;
+        height: 50px;
+        width: 50px;
     }
     .gora{
-        height: 70px;
+        height: 50px;
     }
     footer{
-        height: 70px;
+        height: 50px;
     }
     h2{
-        font-size: 25px;
+        font-size: 20px;
     }
     .organizer{
         flex-direction: column;
         justify-content: center;
     }
-    .organizer div{
-        width: 40%;
-        margin-left: 30%;
-        margin-right: 30%;
+    .dtyg{
+        width: 60%;
+        margin-left: 20%;
+        margin-right: 20%;
     }
     p{
-        font-size: 30px;
+        font-size: 25px;
     }
     h3{
-        font-size: 20px;
+        font-size: 12px;
     }
     #rozwijane a{
         height: 50px;
     }
     #typ,#zadanie{
         height: 50px;
+    }
+    button{
+        font-size: 20px;
+        height: 80px;
+        width: 200px;
+    }
+    input{
+        font-size: 18px;
+    }
+    textarea{
+        font-size: 18px;
     }
 }
 .dzien{
@@ -261,14 +282,4 @@ label{
     font-size: 25px;
     margin-left: 10px;
     margin-right: 20px;
-}
-textarea{
-    margin-left: 20%;
-    margin-right: 20%;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    width: 60%;
-    height: 500px;
-    resize: none;
-    font-size: 30px;
 }
