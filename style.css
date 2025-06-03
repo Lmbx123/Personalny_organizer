@@ -257,14 +257,12 @@ textarea{
     }
     #typ,#zadanie{
         height: 50px;
+        font-size: 18px;
     }
     button{
-        font-size: 20px;
+        font-size: 15px;
         height: 80px;
         width: 200px;
-    }
-    input{
-        font-size: 18px;
     }
     textarea{
         font-size: 18px;
