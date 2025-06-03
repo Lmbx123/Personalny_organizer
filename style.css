@@ -5,7 +5,7 @@
     color: black;
 }
 body{
-    background-image: url(../zdjecia/notatka-tlo.jpg);
+    background-image: url(./notatka-tlo.jpg);
     overflow-x: hidden;
 }
 h1{
